@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbrirArquivoTXT", "AbrirArquivoTXT\AbrirArquivoTXT.csproj", "{2FF0FC9E-B885-450E-9C13-D34DB261833E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste2", "teste2\teste2.csproj", "{3D7D37CF-ABF4-4765-9982-DEA0C7E4C4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste3", "teste3\teste3.csproj", "{BD47466A-BC05-4729-8232-66203AEC832E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF0FC9E-B885-450E-9C13-D34DB261833E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF0FC9E-B885-450E-9C13-D34DB261833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF0FC9E-B885-450E-9C13-D34DB261833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF0FC9E-B885-450E-9C13-D34DB261833E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7D37CF-ABF4-4765-9982-DEA0C7E4C4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7D37CF-ABF4-4765-9982-DEA0C7E4C4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7D37CF-ABF4-4765-9982-DEA0C7E4C4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7D37CF-ABF4-4765-9982-DEA0C7E4C4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD47466A-BC05-4729-8232-66203AEC832E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD47466A-BC05-4729-8232-66203AEC832E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD47466A-BC05-4729-8232-66203AEC832E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD47466A-BC05-4729-8232-66203AEC832E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F039DFF-AE57-484F-9560-890E08A7AFC0}
+	EndGlobalSection
+EndGlobal
