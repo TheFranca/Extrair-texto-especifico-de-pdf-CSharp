@@ -1,13 +1,13 @@
 ﻿///   Site para auxiliar a construir os Regexs https://regex101.com/r/7bnJb7/1
 
 using AbrirArquivoTXT.Entities;
+using AbrirArquivoTXT.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-
 
 
 namespace AbrirArquivoTXT
@@ -18,29 +18,15 @@ namespace AbrirArquivoTXT
         {
             string path = @"C:\Users\T.I\Desktop\tt.txt";
 
-            string[] dados_txt = File.ReadAllLines(path);
+            ExtractData extractData = new ExtractData(path);
 
-            int tam = dados_txt.Length;
+            Enterprise enterprise = new Enterprise();
+            EnterpriseModel e = enterprise.Getdata(extractData.DataFromHeader());
 
-            Empresa e = new Empresa();
-
-            var file = new StreamWriter(@"C:\Users\T.I\Desktop\teste.csv");
-            
-            for (int i = 0; i < tam; i++)
-            {
-                Match np = Regex.Match(dados_txt[i], RegexPatterns.NUMERO_PIS);
-
-                if (np.Success)
-                {
-                    Worker w = e.ExtractData(dados_txt[i], dados_txt[i + 2]);
-                    //Console.WriteLine(w);
-                    file.WriteLine(w);
-                                       
-                }
-
-            }
-
-            file.Close();
+            Console.WriteLine($"CNPJ: {e.Cnpj}");
+            Console.WriteLine($"Código da SEFIP: {e.SefipCode}");
+            Console.WriteLine($"Mês de Competência: {e.CompetenceMonth}");
+            Console.WriteLine($"Ano de Competencia: {e.CompetenceYear}");
 
         }
     }
